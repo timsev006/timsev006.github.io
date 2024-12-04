@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     dialog.showModal();//sinon l'Affiche
   }
 
-  jamais.addEventListener('click', () => {
+  jamais.addEventListener('cliccck', () => {
     localStorage.setItem('masquer', 1);//met a 1 pour dire que le bouton jamais a été cliquer
     dialog.close(); 
   });
