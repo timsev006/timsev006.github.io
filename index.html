@@ -3,64 +3,92 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>Memory Game</title>
+  <title>Jeux de mémoire</title>
 
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <dialog id="main-dialog">
+    <form method="dialog">
+      <div>
+        <h1>Projet personnel</h1>
+        <hr>
+        <em><p>Design web gr.2 - Automne 2024</p></em>
+        
+        <div class="container">
+          <div class="gauche">
+            <p><strong>Réalisé par</strong><br><em>Timothé Sévigny</em></p>
+            <p><strong>Inspiration</strong><br>
+              <a href="https://github.com/code-sketch/memory-game"><em>https://github.com/code-sketch/memory-game</em></a>
+            </p>
+          </div>
+          <div class="droite">
+            <img src="https://design-web-victo.github.io/assets/images/megaman.png" alt="Sprite" width="200px">
+          </div>
+        </div>
+        <button id="fermer">Fermer la fenêtre</button><br>
+        <button id="jamais" type="button">Ne plus afficher cette fenêtre</button>
+      </div>
+    </form>
+  </dialog>
+  
+<div id="timer-div">
+  <div id="timer">Temps : 0.0s</div>
+  <div id="best-time">Meilleur temps : Pas encore de record.</div>
+</div>
   <section class="memory-game">
-    <div class="memory-card" data-framework="aurelia">
-      <img class="front-face" src="../img/aurelia.svg" alt="Aurelia" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
+    <div class="memory-card" data-framework="nike">
+      <img class="front-face" src="img/nike.png" alt="nike" />
+      <img class="back-face" src="img/logo.png" alt="Badge" />
     </div>
-    <div class="memory-card" data-framework="aurelia">
-      <img class="front-face" src="../img/aurelia.svg" alt="Aurelia" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-
-    <div class="memory-card" data-framework="vue">
-      <img class="front-face" src="../img/vue.svg" alt="Vue" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="vue">
-      <img class="front-face" src="../img/vue.svg" alt="Vue" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
+    <div class="memory-card" data-framework="nike">
+      <img class="front-face" src="img/nike.png" alt="nike" />
+      <img class="back-face" src="img/logo.png" alt="Badge" />
     </div>
 
-    <div class="memory-card" data-framework="angular">
-      <img class="front-face" src="../img/angular.svg" alt="Angular" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
+    <div class="memory-card" data-framework="adidas">
+      <img class="front-face" src="img/adidas.png" alt="adidas" />
+      <img class="back-face" src="img/logo.png" alt="Badge" />
     </div>
-    <div class="memory-card" data-framework="angular">
-      <img class="front-face" src="../img/angular.svg" alt="Angular" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-
-    <div class="memory-card" data-framework="ember">
-      <img class="front-face" src="../img/ember.svg" alt="Ember" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="ember">
-      <img class="front-face" src="../img/ember.svg" alt="Ember" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
+    <div class="memory-card" data-framework="adidas">
+      <img class="front-face" src="img/adidas.png" alt="adidas" />
+      <img class="back-face" src="img/logo.png" alt="Badge" />
     </div>
 
-    <div class="memory-card" data-framework="backbone">
-      <img class="front-face" src="../img/backbone.svg" alt="Backbone" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
+    <div class="memory-card" data-framework="jordan">
+      <img class="front-face" src="img/jordan.png" alt="jordan" />
+      <img class="back-face" src="img/logo.png" alt="Badge" />
     </div>
-    <div class="memory-card" data-framework="backbone">
-      <img class="front-face" src="../img/backbone.svg" alt="Backbone" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
+    <div class="memory-card" data-framework="jordan">
+      <img class="front-face" src="img/jordan.png" alt="jordan" />
+      <img class="back-face" src="img/logo.png" alt="Badge" />
     </div>
 
-    <div class="memory-card" data-framework="react">
-      <img class="front-face" src="../img/react.svg" alt="React" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
+    <div class="memory-card" data-framework="newBlance">
+      <img class="front-face" src="img/new_balance.png" alt="newBlance" />
+      <img class="back-face" src="img/logo.png" alt="Badge" />
     </div>
-    <div class="memory-card" data-framework="react">
-      <img class="front-face" src="../img/react.svg" alt="React" />
-      <img class="back-face" src="../img/js-badge.svg" alt="JS Badge" />
+    <div class="memory-card" data-framework="newBlance">
+      <img class="front-face" src="img/new_balance.png" alt="newBlance" />
+      <img class="back-face" src="img/logo.png" alt="Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="tnf">
+      <img class="front-face" src="img/tnf.svg" alt="tnf" />
+      <img class="back-face" src="img/logo.png" alt="Badge" />
+    </div>
+    <div class="memory-card" data-framework="tnf">
+      <img class="front-face" src="img/tnf.svg" alt="tnf" />
+      <img class="back-face" src="img/logo.png" alt="Badge" />
+    </div>
+
+    <div class="memory-card" data-framework="puma">
+      <img class="front-face" src="img/puma.png" alt="puma" />
+      <img class="back-face" src="img/logo.png" alt="Badge" />
+    </div>
+    <div class="memory-card" data-framework="puma">
+      <img class="front-face" src="img/puma.png" alt="puma" />
+      <img class="back-face" src="img/logo.png" alt="Badge" />
     </div>
   </section>
 

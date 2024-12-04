@@ -39,7 +39,18 @@ body {
   transform: rotateY(180deg);
 }
 
-.front-face,
+.front-face
+  {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #fff;
+    backface-visibility: hidden;
+  }
+
+
 .back-face {
   width: 100%;
   height: 100%;
@@ -53,3 +64,116 @@ body {
 .front-face {
   transform: rotateY(180deg);
 }
+
+dialog {
+  text-align: center;
+  width: 590px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  font-family: Arial, sans-serif;
+  background-color: white;
+  border: none;
+  padding: 20px;
+  margin: auto;
+}
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+  gap: 20px; 
+  height: 100%;  
+}
+
+.gauche, .droite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gauche {
+  text-align: left;
+}
+
+.droite {
+  text-align: right;
+}
+
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 15px 0;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#fermer {
+  background-color: #007bff;
+  font-size: 20PX;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#fermer:hover {
+  background-color: #0056b3;
+}
+
+#jamais {
+  background: none;
+  color: #000;
+  padding: 10px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+#jamais:hover {
+  text-decoration: underline;
+}
+
+::backdrop {
+  background-color: rgba(93, 188, 251, 0.5);
+}
+#timer-div{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 300px;
+  background-color: #fff;
+
+  padding: 20px;
+font-size: 1.2em;
+top: 0;
+left: calc(50% - 150px);
+position: fixed;
+text-align: center;
+border:5px solid #000;
+border-top:none;
+border-bottom-left-radius: 25px;
+border-bottom-right-radius: 25px;
+}
+
